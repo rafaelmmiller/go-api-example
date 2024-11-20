@@ -1,0 +1,19 @@
+
+### Get All Products
+GET http://localhost:8080/products
+Content-Type: application/json
+
+### Get Product By Id
+GET http://localhost:8080/products/123e4567-e89b-12d3-a456-426614174000
+Content-Type: application/json
+
+### Create Product
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "id": "113e4567-e89b-12d3-a456-426614174000",
+  "name": "Product 1",
+  "description": "Product 1 description",
+  "price": 100
+}
