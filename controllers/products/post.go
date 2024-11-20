@@ -32,9 +32,9 @@ func (pc *CreateProductsController) CreateProduct(ctx *gin.Context) {
 
 	zErr := model.ProductSchema.Parse(jsonBody, &product)
 	if zErr != nil {
-		sanitized := z.Errors.SanitizeMap(zErr)
-		delete(sanitized, "$first") // idk why this returns $first...
-		ctx.JSON(http.StatusBadRequest, gin.H{"error": sanitized})
+		sanitizedErr := z.Errors.SanitizeMap(zErr)
+		delete(sanitizedErr, "$first") // idk why this returns $first...
+		ctx.JSON(http.StatusBadRequest, gin.H{"error": sanitizedErr})
 		return
 	}
 
