@@ -2,9 +2,9 @@ package controller
 
 import (
 	"fmt"
-	"go-api-test/model"
-	usecases "go-api-test/usecases/products"
-	"go-api-test/utils"
+	model "go-api-test/internal/models"
+	usecases "go-api-test/internal/usecases/products"
+	utils "go-api-test/internal/utils"
 	"net/http"
 
 	z "github.com/Oudwins/zog"

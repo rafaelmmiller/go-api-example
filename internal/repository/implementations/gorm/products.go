@@ -1,7 +1,7 @@
 package gorm
 
 import (
-	"go-api-test/model"
+	model "go-api-test/internal/models"
 
 	"gorm.io/gorm"
 )

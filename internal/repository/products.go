@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"go-api-test/model"
+	model "go-api-test/internal/models"
 )
 
 type ProductsRepository interface {

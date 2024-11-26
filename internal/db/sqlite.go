@@ -17,7 +17,7 @@ func (Product) TableName() string {
 }
 
 func Init() *gorm.DB {
-	db, err := gorm.Open(sqlite.Open("db/sqlite.db"), &gorm.Config{})
+	db, err := gorm.Open(sqlite.Open("internal/db/sqlite.db"), &gorm.Config{})
 	if err != nil {
 		panic("failed to connect database")
 	}

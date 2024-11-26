@@ -3,10 +3,10 @@ package routes
 import (
 	"github.com/gin-gonic/gin"
 
-	controller "go-api-test/controllers/products"
-	db "go-api-test/db"
-	gorm "go-api-test/repository/implementations/gorm"
-	usecases "go-api-test/usecases/products"
+	db "go-api-test/internal/db"
+	gorm "go-api-test/internal/repository/implementations/gorm"
+	controller "go-api-test/internal/server/controllers/products"
+	usecases "go-api-test/internal/usecases/products"
 )
 
 func RegisterRoutes(router *gin.Engine) {

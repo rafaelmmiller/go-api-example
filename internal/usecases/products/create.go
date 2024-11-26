@@ -1,8 +1,8 @@
 package usecases
 
 import (
-	"go-api-test/model"
-	"go-api-test/repository"
+	model "go-api-test/internal/models"
+	repository "go-api-test/internal/repository"
 )
 
 type CreateProductUseCase struct {

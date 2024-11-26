@@ -1,11 +1,11 @@
-package model
+package models
 
 import (
 	z "github.com/Oudwins/zog"
 )
 
 type Product struct {
-	Id          string
+	ID          string
 	Name        string
 	Description string
 	Price       float64

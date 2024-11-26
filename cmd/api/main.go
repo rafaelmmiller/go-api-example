@@ -1,7 +1,7 @@
 package main
 
 import (
-	routes "go-api-test/routes"
+	routes "go-api-test/internal/server/routes"
 
 	"github.com/gin-gonic/gin"
 )
